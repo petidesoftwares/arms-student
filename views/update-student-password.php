@@ -26,9 +26,9 @@
                 <div class = "col-3"></div>
                 <fieldset class = "col-6 double-input-form"> 
                     <legend>Update Password Form</legend>
-                    <input type="text" name="mat_num" id="mat-num" placeholder = "Enter Matric Number"><br>
-                    <input type="password" name="student_login_password" id="student-login-password" placeholder = "Enter Password"><br>
-                    <button class = "double-input-btn" id = "login-btn" onclick = "studentLogin();">Login</button>
+                    <input type="password" name="new_password" id="new-password" placeholder = "Enter New Password"><br>
+                    <input type="password" name="confirm_password" id="confirm-password" placeholder = "Confirm Password"><br>
+                    <button class = "double-input-btn" id = "update-password-btn" onclick = "studentLogin();">Login</button>
                 </fieldset>
                 <div class = "col-3"></div>
             </div>
