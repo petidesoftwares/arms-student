@@ -31,8 +31,16 @@ function studentLogin(){
         $("#modal").show();
         $("#modal-content").html(message);
     }else{
-        $.post("https://myschool-arms.herokuapp.com/app/backend/student-login.php",{username:username, password:password},function(data){
-            alert(data);
+        $.ajax({
+            url: "https://myschool-arms.herokuapp.com/backend/student-login.php",
+            type: GET,
+            success:  function(data){
+                alert(data);
+            },
+            error: function(error){
+                alert(error);
+            }
+            
         })
     }
 }
